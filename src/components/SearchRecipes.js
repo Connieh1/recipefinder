@@ -3,18 +3,25 @@ import {
   Form,
   FormGroup,
   FormControl,
-  ControlLabel,
+  FormLabel,
   Button,
 } from "react-bootstrap";
 
 class SearchRecipes extends Component {
   render() {
-    return;
-    <Form inline>
-      <FormGroup>
-        
-      </FormGroup> <FormGroup></FormGroup>
-    </Form>;
+    return (
+      <Form inline>
+        <FormGroup>
+          <FormLabel>Ingredients</FormLabel>{" "}
+          <FormControl type="text" placeholder="garlic, chicken" />
+        </FormGroup>{" "}
+        <FormGroup>
+          <FormLabel>Dish</FormLabel>
+          <FormControl type="text" placeholder="adobo"></FormControl>
+        </FormGroup>{" "}
+        <Button>Submit</Button>
+      </Form>
+    );
   }
 }
 
